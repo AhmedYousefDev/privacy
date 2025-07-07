@@ -8,11 +8,11 @@
         @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
         
         :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
+            --primary-color: #2c3e50; 
+            --secondary-color: #3498db; 
             --accent-color: #e74c3c;
-            --light-color: #ecf0f1;
-            --dark-color: #2c3e50;
+            --light-color: #ecf0f1; 
+            --dark-color: #2c3e50; 
         }
         
         body {
@@ -40,19 +40,18 @@
             margin-bottom: 1.5rem;
         }
         
-        .logo-text {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin: 0 1rem;
-            color: white;
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        .logo-img {
+            height: 80px;
+            width: auto;
+            margin: 0 15px;
         }
         
-        .logo-text span {
-            display: block;
-            font-size: 1.2rem;
-            font-weight: 400;
-            margin-top: 0.5rem;
+        .logo-text {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
         }
         
         .container {
@@ -76,19 +75,6 @@
             color: var(--secondary-color);
             font-size: 1.5rem;
             margin: 2rem 0 1rem;
-        }
-        
-        p, li {
-            font-size: 1.1rem;
-            color: #555;
-        }
-        
-        ul {
-            padding-right: 1.5rem;
-        }
-        
-        li {
-            margin-bottom: 0.8rem;
         }
         
         .update-date {
@@ -115,8 +101,12 @@
                 margin: 0 1rem 2rem;
             }
             
+            .logo-img {
+                height: 60px;
+            }
+            
             .logo-text {
-                font-size: 2rem;
+                font-size: 1.8rem;
             }
         }
     </style>
@@ -124,12 +114,9 @@
 <body>
     <div class="header">
         <div class="logo-container">
-            <div class="logo-text">
-                المخزن
-                <span>Storage</span>
-            </div>
+            <img src="egypt_studio_logo.png" alt="لوجو تطبيق المخزن" class="logo-img">
+            <h1 class="logo-text">سياسة الخصوصية</h1>
         </div>
-        <h1>سياسة الخصوصية</h1>
     </div>
     
     <div class="container">
@@ -142,7 +129,6 @@
         <p>التطبيق لا يقوم بما يلي:</p>
         <ul>
             <li>لا يجمع أي معلومات شخصية (مثل الاسم، البريد الإلكتروني، الموقع).</li>
-            <li>لا يطلب تسجيل دخول أو إنشاء حساب.</li>
             <li>لا يتتبع نشاط المستخدم خارج التطبيق.</li>
         </ul>
 
@@ -162,7 +148,7 @@
         <div class="contact-info">
             <h2>6. اتصل بنا</h2>
             <p>لأية استفسارات حول الخصوصية، يمكنك التواصل معنا عبر:</p>
-            <p>البريد الإلكتروني: <strong>kongoph3000@gmail.com</strong></p>
+            <p>البريد الإلكتروني: <strong>support@example.com</strong></p>
         </div>
     </div>
 </body>
