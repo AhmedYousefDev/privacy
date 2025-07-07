@@ -5,30 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>سياسة الخصوصية - تطبيق إدارة المخزن</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-            background-color: #f9f9f9;
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+        
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --light-color: #ecf0f1;
+            --dark-color: #2c3e50;
         }
+        
+        body {
+            font-family: 'Tajawal', Arial, sans-serif;
+            line-height: 1.8;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f7fa;
+            color: #333;
+        }
+        
+        .header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .logo-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+        
+        .logo-text {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0 1rem;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        .logo-text span {
+            display: block;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin-top: 0.5rem;
+        }
+        
         .container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 0 auto 3rem;
             background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.08);
         }
-        h1, h2 {
-            color: #333;
+        
+        h1 {
+            color: var(--primary-color);
+            font-size: 2rem;
+            margin-top: 0;
+            border-bottom: 2px solid var(--light-color);
+            padding-bottom: 0.8rem;
+        }
+        
+        h2 {
+            color: var(--secondary-color);
+            font-size: 1.5rem;
+            margin: 2rem 0 1rem;
+        }
+        
+        p, li {
+            font-size: 1.1rem;
+            color: #555;
+        }
+        
+        ul {
+            padding-right: 1.5rem;
+        }
+        
+        li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .update-date {
+            background-color: var(--light-color);
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-color);
+        }
+        
+        .contact-info {
+            background-color: var(--light-color);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            border-right: 4px solid var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 1.5rem;
+                margin: 0 1rem 2rem;
+            }
+            
+            .logo-text {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
+    <div class="header">
+        <div class="logo-container">
+            <div class="logo-text">
+                المخزن
+                <span>Storage</span>
+            </div>
+        </div>
+        <h1>سياسة الخصوصية</h1>
+    </div>
+    
     <div class="container">
-        <h1>سياسة الخصوصية لتطبيق إدارة المخزن</h1>
-        <p>آخر تحديث: [تاريخ اليوم]</p>
+        <span class="update-date">آخر تحديث: 7 يوليو 2025</span>
 
         <h2>1. مقدمة</h2>
         <p>نشكرك لاستخدام تطبيق إدارة المخزن. نحن نقدّر خصوصيتك ونؤكد أن التطبيق لا يجمع أي بيانات شخصية.</p>
@@ -54,8 +159,11 @@
         <h2>5. التغييرات على السياسة</h2>
         <p>سيتم إعلامك بأي تحديثات عبر صفحة السياسة هذه.</p>
 
-        <h2>6. اتصل بنا</h2>
-        <p>لأية استفسارات، يمكنك التواصل عبر: [بريدك الإلكتروني أو وسيلة التواصل].</p>
+        <div class="contact-info">
+            <h2>6. اتصل بنا</h2>
+            <p>لأية استفسارات حول الخصوصية، يمكنك التواصل معنا عبر:</p>
+            <p>البريد الإلكتروني: <strong>kongoph3000@gmail.com</strong></p>
+        </div>
     </div>
 </body>
 </html>
